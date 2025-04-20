@@ -11765,3 +11765,321 @@ WARNING: scala.reflect.internal.FatalError: package object runtime does not have
 	at sc... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_scala.reflect.intern..._18-42-08-922.md)
 Apr 19, 2025 10:37:54 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
 WARNING: Unexpected error when compiling gatling-performance-tests-test: scala.reflect.internal.FatalError: p... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_Unexpected error whe..._18-42-08-965.md)
+Apr 20, 2025 11:53:12 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc:  (full report at: C:\gatling-performance-tests\.metals\.reports\metals-full\2025-04-20\r_empty-definition_(gatling-performance-tests-test)_11-53-12-434.md)
+Apr 20, 2025 11:53:12 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc:  (full report at: C:\gatling-performance-tests\.metals\.reports\metals-full\2025-04-20\r_empty-definition_(gatling-performance-tests-test)_11-53-12-434.md)
+Apr 20, 2025 11:53:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: head of empty String
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: head of empty String
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.util.NoSuchElementException: head of empty String
+	at scala.collection.StringOps$.head$extension(StringOps.scala:1127)
+	at scala.meta.internal.metals.TrigramSubstrings$.runForeach$1(TrigramSubstrings.scala:107)
+	at scala.meta.internal.metals.TrigramSubstrings$.uppercased(TrigramSubstrings.scala:144)
+	at scala.meta.internal.metals.WorkspaceSymbolQuery$AlternativeQuery$.all(WorkspaceSymbolQuery.scala:92)
+	at scala.meta.internal.metals.WorkspaceSymbolQuery$.fromTextQuery(WorkspaceSymbolQuery.scala:47)
+	at scala.meta.internal.metals.WorkspaceSymbolProvider.searchUnsafe(WorkspaceSymbolProvider.scala:234)
+	at scala.meta.internal.metals.WorkspaceSymbolProvider.search(WorkspaceSymbolProvider.scala:59)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$workspaceSymbol$1(MetalsLspService.scala:1231)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Apr 20, 2025 11:55:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 195
+2025.04.20 11:55:45 INFO  compiling gatling-performance-tests-test (4 scala sources)
+Apr 20, 2025 11:55:55 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-core\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-855.md)
+Apr 20, 2025 11:55:55 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-905.md)
+Apr 20, 2025 11:55:56 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-920.md)
+Apr 20, 2025 11:55:56 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-20\r_error while loading ..._11-55-56-076.md)
+Apr 20, 2025 11:55:56 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading HttpProtocolBuilder, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-099.md)
+Apr 20, 2025 11:55:56 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-716.md)
+Apr 20, 2025 11:55:56 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Universe, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-741.md)
+Apr 20, 2025 11:55:56 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-786.md)
+2025.04.20 11:55:56 INFO  time: compiled gatling-performance-tests-test in 10s
+Apr 20, 2025 11:55:56 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: scala.reflect.internal.FatalError: package object runtime does not have a decl currentMirror
+	at sc... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_scala.reflect.intern..._18-42-08-922.md)
+Apr 20, 2025 11:55:56 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: Unexpected error when compiling gatling-performance-tests-test: scala.reflect.internal.FatalError: p... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_Unexpected error whe..._18-42-08-965.md)
+2025.04.20 11:55:56 INFO  compiling gatling-performance-tests-test (4 scala sources)
+Apr 20, 2025 11:55:57 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-core\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-855.md)
+Apr 20, 2025 11:55:57 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-905.md)
+Apr 20, 2025 11:55:57 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-920.md)
+Apr 20, 2025 11:55:57 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-20\r_error while loading ..._11-55-56-076.md)
+Apr 20, 2025 11:55:57 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading HttpProtocolBuilder, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-099.md)
+Apr 20, 2025 11:55:58 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-716.md)
+Apr 20, 2025 11:55:58 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Universe, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-741.md)
+Apr 20, 2025 11:55:58 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-786.md)
+2025.04.20 11:55:58 INFO  time: compiled gatling-performance-tests-test in 1.25s
+Apr 20, 2025 11:55:58 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: scala.reflect.internal.FatalError: package object runtime does not have a decl currentMirror
+	at sc... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_scala.reflect.intern..._18-42-08-922.md)
+Apr 20, 2025 11:55:58 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: Unexpected error when compiling gatling-performance-tests-test: scala.reflect.internal.FatalError: p... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_Unexpected error whe..._18-42-08-965.md)
+2025.04.20 11:56:03 INFO  compiling gatling-performance-tests-test (4 scala sources)
+Apr 20, 2025 11:56:03 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-core\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-855.md)
+Apr 20, 2025 11:56:03 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-905.md)
+Apr 20, 2025 11:56:03 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-920.md)
+Apr 20, 2025 11:56:03 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-20\r_error while loading ..._11-55-56-076.md)
+Apr 20, 2025 11:56:03 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading HttpProtocolBuilder, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-099.md)
+Apr 20, 2025 11:56:04 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-716.md)
+Apr 20, 2025 11:56:04 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Universe, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-741.md)
+Apr 20, 2025 11:56:04 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-786.md)
+2025.04.20 11:56:03 INFO  time: compiled gatling-performance-tests-test in 0.82s
+Apr 20, 2025 11:56:04 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: scala.reflect.internal.FatalError: package object runtime does not have a decl currentMirror
+	at sc... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_scala.reflect.intern..._18-42-08-922.md)
+Apr 20, 2025 11:56:04 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: Unexpected error when compiling gatling-performance-tests-test: scala.reflect.internal.FatalError: p... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_Unexpected error whe..._18-42-08-965.md)
+2025.04.20 11:56:10 INFO  compiling gatling-performance-tests-test (4 scala sources)
+Apr 20, 2025 11:56:11 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-core\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-855.md)
+Apr 20, 2025 11:56:11 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-905.md)
+Apr 20, 2025 11:56:11 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-920.md)
+Apr 20, 2025 11:56:11 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-20\r_error while loading ..._11-55-56-076.md)
+Apr 20, 2025 11:56:11 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading HttpProtocolBuilder, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-099.md)
+Apr 20, 2025 11:56:11 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-716.md)
+Apr 20, 2025 11:56:11 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Universe, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-741.md)
+Apr 20, 2025 11:56:11 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-786.md)
+2025.04.20 11:56:10 INFO  time: compiled gatling-performance-tests-test in 0.6s
+Apr 20, 2025 11:56:11 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: scala.reflect.internal.FatalError: package object runtime does not have a decl currentMirror
+	at sc... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_scala.reflect.intern..._18-42-08-922.md)
+Apr 20, 2025 11:56:11 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: Unexpected error when compiling gatling-performance-tests-test: scala.reflect.internal.FatalError: p... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_Unexpected error whe..._18-42-08-965.md)
+2025.04.20 11:56:16 INFO  compiling gatling-performance-tests-test (5 scala sources)
+Apr 20, 2025 11:56:17 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-core\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-855.md)
+Apr 20, 2025 11:56:17 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-905.md)
+Apr 20, 2025 11:56:17 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-920.md)
+Apr 20, 2025 11:56:17 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-20\r_error while loading ..._11-55-56-076.md)
+Apr 20, 2025 11:56:17 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading HttpProtocolBuilder, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-099.md)
+Apr 20, 2025 11:56:17 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-716.md)
+Apr 20, 2025 11:56:17 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Universe, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-741.md)
+Apr 20, 2025 11:56:17 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-786.md)
+2025.04.20 11:56:16 INFO  time: compiled gatling-performance-tests-test in 0.91s
+Apr 20, 2025 11:56:17 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: scala.reflect.internal.FatalError: package object runtime does not have a decl currentMirror
+	at sc... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_scala.reflect.intern..._18-42-08-922.md)
+Apr 20, 2025 11:56:17 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: Unexpected error when compiling gatling-performance-tests-test: scala.reflect.internal.FatalError: p... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_Unexpected error whe..._18-42-08-965.md)
+2025.04.20 11:56:17 INFO  compiling gatling-performance-tests-test (5 scala sources)
+Apr 20, 2025 11:56:18 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-core\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-855.md)
+Apr 20, 2025 11:56:18 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-905.md)
+Apr 20, 2025 11:56:18 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-920.md)
+Apr 20, 2025 11:56:18 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-20\r_error while loading ..._11-55-56-076.md)
+Apr 20, 2025 11:56:18 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading HttpProtocolBuilder, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-099.md)
+Apr 20, 2025 11:56:18 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-716.md)
+Apr 20, 2025 11:56:18 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Universe, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-741.md)
+Apr 20, 2025 11:56:18 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-786.md)
+2025.04.20 11:56:17 INFO  time: compiled gatling-performance-tests-test in 0.61s
+Apr 20, 2025 11:56:18 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: scala.reflect.internal.FatalError: package object runtime does not have a decl currentMirror
+	at sc... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_scala.reflect.intern..._18-42-08-922.md)
+Apr 20, 2025 11:56:18 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: Unexpected error when compiling gatling-performance-tests-test: scala.reflect.internal.FatalError: p... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_Unexpected error whe..._18-42-08-965.md)
+2025.04.20 11:57:16 INFO  compiling gatling-performance-tests-test (5 scala sources)
+Apr 20, 2025 11:57:16 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-core\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-855.md)
+Apr 20, 2025 11:57:16 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-905.md)
+Apr 20, 2025 11:57:16 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-920.md)
+Apr 20, 2025 11:57:16 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-20\r_error while loading ..._11-55-56-076.md)
+Apr 20, 2025 11:57:16 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading HttpProtocolBuilder, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-099.md)
+Apr 20, 2025 11:57:16 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-716.md)
+Apr 20, 2025 11:57:16 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Universe, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-741.md)
+Apr 20, 2025 11:57:16 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-786.md)
+2025.04.20 11:57:16 INFO  time: compiled gatling-performance-tests-test in 0.5s
+Apr 20, 2025 11:57:16 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: scala.reflect.internal.FatalError: package object runtime does not have a decl currentMirror
+	at sc... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_scala.reflect.intern..._18-42-08-922.md)
+Apr 20, 2025 11:57:16 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: Unexpected error when compiling gatling-performance-tests-test: scala.reflect.internal.FatalError: p... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_Unexpected error whe..._18-42-08-965.md)
+2025.04.20 11:57:22 INFO  compiling gatling-performance-tests-test (5 scala sources)
+Apr 20, 2025 11:57:22 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-core\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-855.md)
+Apr 20, 2025 11:57:22 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-905.md)
+Apr 20, 2025 11:57:22 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-920.md)
+Apr 20, 2025 11:57:22 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-20\r_error while loading ..._11-55-56-076.md)
+Apr 20, 2025 11:57:22 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading HttpProtocolBuilder, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-099.md)
+Apr 20, 2025 11:57:22 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-716.md)
+Apr 20, 2025 11:57:22 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Universe, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-741.md)
+Apr 20, 2025 11:57:22 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-786.md)
+2025.04.20 11:57:22 INFO  time: compiled gatling-performance-tests-test in 0.58s
+Apr 20, 2025 11:57:22 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: scala.reflect.internal.FatalError: package object runtime does not have a decl currentMirror
+	at sc... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_scala.reflect.intern..._18-42-08-922.md)
+Apr 20, 2025 11:57:22 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: Unexpected error when compiling gatling-performance-tests-test: scala.reflect.internal.FatalError: p... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_Unexpected error whe..._18-42-08-965.md)
+2025.04.20 11:57:28 INFO  compiling gatling-performance-tests-test (5 scala sources)
+Apr 20, 2025 11:57:29 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-core\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-855.md)
+Apr 20, 2025 11:57:29 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-905.md)
+Apr 20, 2025 11:57:29 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-920.md)
+Apr 20, 2025 11:57:29 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-20\r_error while loading ..._11-55-56-076.md)
+Apr 20, 2025 11:57:29 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading HttpProtocolBuilder, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-099.md)
+Apr 20, 2025 11:57:29 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-716.md)
+Apr 20, 2025 11:57:29 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Universe, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-741.md)
+Apr 20, 2025 11:57:29 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-786.md)
+2025.04.20 11:57:28 INFO  time: compiled gatling-performance-tests-test in 0.36s
+Apr 20, 2025 11:57:29 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: scala.reflect.internal.FatalError: package object runtime does not have a decl currentMirror
+	at sc... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_scala.reflect.intern..._18-42-08-922.md)
+Apr 20, 2025 11:57:29 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: Unexpected error when compiling gatling-performance-tests-test: scala.reflect.internal.FatalError: p... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_Unexpected error whe..._18-42-08-965.md)
+2025.04.20 11:57:37 INFO  compiling gatling-performance-tests-test (6 scala sources)
+Apr 20, 2025 11:57:37 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-core\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-855.md)
+Apr 20, 2025 11:57:37 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-905.md)
+Apr 20, 2025 11:57:37 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-920.md)
+Apr 20, 2025 11:57:37 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-20\r_error while loading ..._11-55-56-076.md)
+Apr 20, 2025 11:57:37 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading HttpProtocolBuilder, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-099.md)
+Apr 20, 2025 11:57:37 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-716.md)
+Apr 20, 2025 11:57:37 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Universe, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-741.md)
+Apr 20, 2025 11:57:37 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-786.md)
+2025.04.20 11:57:37 INFO  time: compiled gatling-performance-tests-test in 0.47s
+Apr 20, 2025 11:57:37 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: scala.reflect.internal.FatalError: package object runtime does not have a decl currentMirror
+	at sc... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_scala.reflect.intern..._18-42-08-922.md)
+Apr 20, 2025 11:57:37 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: Unexpected error when compiling gatling-performance-tests-test: scala.reflect.internal.FatalError: p... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_Unexpected error whe..._18-42-08-965.md)
+2025.04.20 11:57:39 INFO  compiling gatling-performance-tests-test (6 scala sources)
+Apr 20, 2025 11:57:39 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-core\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-855.md)
+Apr 20, 2025 11:57:39 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-905.md)
+Apr 20, 2025 11:57:39 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-920.md)
+Apr 20, 2025 11:57:39 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-20\r_error while loading ..._11-55-56-076.md)
+Apr 20, 2025 11:57:39 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading HttpProtocolBuilder, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-099.md)
+Apr 20, 2025 11:57:39 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-716.md)
+Apr 20, 2025 11:57:39 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Universe, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-741.md)
+Apr 20, 2025 11:57:39 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-786.md)
+2025.04.20 11:57:39 INFO  time: compiled gatling-performance-tests-test in 0.58s
+Apr 20, 2025 11:57:39 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: scala.reflect.internal.FatalError: package object runtime does not have a decl currentMirror
+	at sc... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_scala.reflect.intern..._18-42-08-922.md)
+Apr 20, 2025 11:57:39 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: Unexpected error when compiling gatling-performance-tests-test: scala.reflect.internal.FatalError: p... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_Unexpected error whe..._18-42-08-965.md)
+2025.04.20 11:57:49 INFO  compiling gatling-performance-tests-test (6 scala sources)
+Apr 20, 2025 11:57:50 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-core\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-855.md)
+Apr 20, 2025 11:57:50 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-905.md)
+Apr 20, 2025 11:57:50 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-920.md)
+Apr 20, 2025 11:57:50 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-20\r_error while loading ..._11-55-56-076.md)
+Apr 20, 2025 11:57:50 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading HttpProtocolBuilder, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-099.md)
+Apr 20, 2025 11:57:50 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-716.md)
+Apr 20, 2025 11:57:50 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Universe, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-741.md)
+Apr 20, 2025 11:57:50 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-786.md)
+2025.04.20 11:57:49 INFO  time: compiled gatling-performance-tests-test in 0.58s
+Apr 20, 2025 11:57:50 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: scala.reflect.internal.FatalError: package object runtime does not have a decl currentMirror
+	at sc... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_scala.reflect.intern..._18-42-08-922.md)
+Apr 20, 2025 11:57:50 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: Unexpected error when compiling gatling-performance-tests-test: scala.reflect.internal.FatalError: p... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_Unexpected error whe..._18-42-08-965.md)
+Apr 20, 2025 12:01:11 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 20, 2025 12:07:45 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc:  (full report at: C:\gatling-performance-tests\.metals\.reports\metals-full\2025-04-20\r_empty-definition_(gatling-performance-tests-test)_12-07-45-490.md)
+Apr 20, 2025 12:08:07 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: No project associated with Uri(file:/C:/gatling-performance-tests/?id=gatling-performance-tests-test... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-20\r_No project associate..._12-08-07-006.md)
+Apr 20, 2025 12:08:07 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: No project associated with Uri(file:/C:/gatling-performance-tests/?id=gatling-performance-tests-test... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-20\r_No project associate..._12-08-07-006.md)
+Apr 20, 2025 12:08:07 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: No project associated with Uri(file:/C:/gatling-performance-tests/?id=gatling-performance-tests-test... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-20\r_No project associate..._12-08-07-006.md)
