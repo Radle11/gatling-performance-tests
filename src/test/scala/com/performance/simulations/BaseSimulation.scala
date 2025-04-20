@@ -13,10 +13,6 @@ class BaseSimulation extends Simulation {
     .acceptEncodingHeader("gzip, deflate")
     .userAgentHeader("Gatling Performance Test")
 
-  // Get OAuth2 token and add it to headers
-  val token: String = Authentication.getOAuth2Token(httpProtocol)
-  val headers: Map[String, String] = Authentication.addAuthHeader(token)
-
   // Common pause configuration
   val minPause = 1
   val maxPause = 3
@@ -37,6 +33,6 @@ class BaseSimulation extends Simulation {
   def createRequest(name: String, method: String, path: String) = {
     http(name)
       .httpRequest(method, path)
-      .headers(headers)
+      .header("Authorization", "Bearer ${access_token}")
   }
 } 

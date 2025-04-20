@@ -6,6 +6,22 @@ import scala.concurrent.duration._
 
 class AnalystSimulation extends BaseSimulation {
   
+  // First, get the token
+  val tokenScenario = scenario("Get OAuth2 Token")
+    .exec(
+      http("OAuth2 Token Request")
+        .post(Config.authUrl)
+        .header("Content-Type", "application/x-www-form-urlencoded")
+        .formParam("grant_type", "client_credentials")
+        .formParam("client_id", Config.clientId)
+        .formParam("client_secret", Config.clientSecret)
+        .formParam("scope", Config.scope)
+        .check(
+          jsonPath("$.access_token").saveAs("access_token"),
+          jsonPath("$.expires_in").saveAs("expires_in")
+        )
+    )
+  
   val analystAssessmentScenario = scenario("Analyst Assessment Scenario")
     .exec(
       createRequest("Get Analyst Assessment", "GET", "/analyst/assessment")
@@ -40,6 +56,14 @@ class AnalystSimulation extends BaseSimulation {
         .check(status.is(204))
     )
 
-  // Set up the simulation with the default load profile
-  defaultLoadProfile(analystAssessmentScenario)
+  // Set up the simulation with the token scenario first, then the analyst assessment scenario
+  setUp(
+    tokenScenario.inject(atOnceUsers(1))
+      .andThen(
+        analystAssessmentScenario.inject(
+          rampUsers(Config.usersCount).during(Config.rampUpTime)
+        )
+      )
+  ).protocols(httpProtocol)
+    .maxDuration(Config.testDuration)
 } 

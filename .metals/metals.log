@@ -11718,3 +11718,50 @@ java.nio.file.FileSystemNotFoundException: Provider "git" not installed
 
 Apr 19, 2025 10:32:41 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+Apr 19, 2025 10:37:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: head of empty String
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: head of empty String
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.util.NoSuchElementException: head of empty String
+	at scala.collection.StringOps$.head$extension(StringOps.scala:1127)
+	at scala.meta.internal.metals.TrigramSubstrings$.runForeach$1(TrigramSubstrings.scala:107)
+	at scala.meta.internal.metals.TrigramSubstrings$.uppercased(TrigramSubstrings.scala:144)
+	at scala.meta.internal.metals.WorkspaceSymbolQuery$AlternativeQuery$.all(WorkspaceSymbolQuery.scala:92)
+	at scala.meta.internal.metals.WorkspaceSymbolQuery$.fromTextQuery(WorkspaceSymbolQuery.scala:47)
+	at scala.meta.internal.metals.WorkspaceSymbolProvider.searchUnsafe(WorkspaceSymbolProvider.scala:234)
+	at scala.meta.internal.metals.WorkspaceSymbolProvider.search(WorkspaceSymbolProvider.scala:59)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$workspaceSymbol$1(MetalsLspService.scala:1231)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2025.04.19 22:37:48 INFO  compiling gatling-performance-tests-test (4 scala sources)
+Apr 19, 2025 10:37:53 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-core\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-855.md)
+Apr 19, 2025 10:37:53 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-905.md)
+Apr 19, 2025 10:37:53 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Predef, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3.9.5\gatling-... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-07-920.md)
+Apr 19, 2025 10:37:53 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading HttpProtocolBuilder, class file '<HOME>\.m2\repository\io\gatling\gatling-http\3... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-099.md)
+Apr 19, 2025 10:37:54 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-716.md)
+Apr 19, 2025 10:37:54 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading Universe, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-741.md)
+Apr 19, 2025 10:37:54 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: error while loading package, class file '<HOME>\.m2\repository\org\scala-lang\scala-reflect\2.13.10\... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_error while loading ..._18-42-08-786.md)
+2025.04.19 22:37:54 INFO  time: compiled gatling-performance-tests-test in 6.1s
+Apr 19, 2025 10:37:54 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: scala.reflect.internal.FatalError: package object runtime does not have a decl currentMirror
+	at sc... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_scala.reflect.intern..._18-42-08-922.md)
+Apr 19, 2025 10:37:54 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: Unexpected error when compiling gatling-performance-tests-test: scala.reflect.internal.FatalError: p... (full report at: C:\gatling-performance-tests\.metals\.reports\bloop\2025-04-19\r_Unexpected error whe..._18-42-08-965.md)
