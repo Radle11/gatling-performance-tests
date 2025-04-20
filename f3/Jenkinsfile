@@ -1,0 +1,52 @@
+pipeline {
+    agent any
+
+    triggers {
+        // Run every Sunday at 12:00 PM (noon)
+        cron('0 12 * * 0')
+    }
+
+    environment {
+        JAVA_HOME = tool 'JDK11'
+        MAVEN_HOME = tool 'Maven3'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Run Performance Tests') {
+            steps {
+                sh """
+                    ${MAVEN_HOME}/bin/mvn clean gatling:test \
+                        -DbaseUrl=${params.BASE_URL ?: 'https://api.yourcompany.com'} \
+                        -Dusers=${params.USERS ?: '100'} \
+                        -DrampUpTime=${params.RAMP_UP_TIME ?: '60'} \
+                        -DtestDuration=${params.TEST_DURATION ?: '300'}
+                """
+            }
+        }
+    }
+
+    post {
+        always {
+            // Archive Gatling reports
+            archiveArtifacts artifacts: 'target/gatling/**/*', fingerprint: true
+            
+            // Clean workspace after build
+            cleanWs()
+        }
+        
+        success {
+            echo 'Performance tests completed successfully!'
+        }
+        
+        failure {
+            echo 'Performance tests failed!'
+            // Add notification steps here if needed
+        }
+    }
+} 
