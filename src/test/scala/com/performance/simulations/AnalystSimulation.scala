@@ -59,9 +59,9 @@ class AnalystSimulation extends BaseSimulation {
     tokenScenario.inject(atOnceUsers(1))
       .andThen(
         analystAssessmentScenario.inject(
-          rampUsers(Config.usersCount).during(Config.rampUpTime)
+          rampUsers(Config.usersCount).during(Config.rampUpTime.seconds)
         )
       )
   ).protocols(httpProtocol)
-    .maxDuration(Config.testDuration)
+    .maxDuration(Config.testDuration.seconds)
 } 
